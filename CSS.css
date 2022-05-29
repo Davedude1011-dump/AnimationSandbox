@@ -1,0 +1,240 @@
+
+.animationAdam {
+position: relative;
+width: 100px;
+height: 100px;
+animation-name: Adam;
+animation-duration: 9.9s;
+animation-iteration-count: 10000;
+}
+.animationSprinkles {
+position: relative;
+width: 100px;
+height: 100px;
+animation-name: Sprinkles;
+animation-duration: 10s;
+animation-iteration-count: 10000;
+}
+.raceTrackAnimation {
+position: relative;
+animation-name: pageStart;
+animation-duration: 5s;
+}
+
+@keyframes Adam {
+0% {
+    left: -12%;
+}
+50% {
+    left: 65%;
+}
+100% {
+    left: 102%;
+}
+}
+
+@keyframes Sprinkles {
+0% {
+    left: -12%;
+}
+40% {
+    left: 30%;
+}
+100% {
+    left: 102%;
+}
+}
+
+@keyframes Button {
+    0% {
+        height: 50px;
+        width: 100px
+    }
+    100% {
+        left: 825px;
+        height: 100px;
+        width: 200px
+    }
+}
+@keyframes pageStart {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 100%
+        
+    }
+}
+@keyframes circleEnlarge {
+    0% {
+        height: 15px;
+        width: 15px
+    }
+    50% {
+        height: 35px;
+        width: 35px
+    }
+    100% {
+        height: 15px;
+        width: 15px
+    }
+}
+@keyframes ovalColory {
+    0% {
+        background-image: linear-gradient(red,green,blue,yellow);
+    }
+    25% {
+        background-image: linear-gradient(yellow,red,green,blue);
+    }
+    50% {
+        background-image: linear-gradient(blue,yellow,red,green);
+    }
+    75% {
+        background-image: linear-gradient(green, blue,yellow,red);
+    }
+    100% {
+        background-image: linear-gradient(red, green, blue,yellow);
+    }
+}
+@keyframes ovalColorx {
+    0% {
+        background-image: linear-gradient(90deg,red,green,blue,yellow);
+    }
+    25% {
+        background-image: linear-gradient(90deg,yellow,red,green,blue);
+    }
+    50% {
+        background-image: linear-gradient(90deg,blue,yellow,red,green);
+    }
+    75% {
+        background-image: linear-gradient(90deg,green, blue,yellow,red);
+    }
+    100% {
+        background-image: linear-gradient(90deg,red, green, blue,yellow);
+    }
+}
+@keyframes moolooZoom {
+    0% {
+        left: 0px;
+        top: 50px
+    }
+    25% {
+        left: 200px;
+        top: 150px
+    }
+    50% {
+        left: 450px;
+        top: -200px
+    }
+    75% {
+        left: 200px;
+        top: 150px
+    }
+    100% {
+        left: 0px;
+        top: 50px
+    }
+}
+
+#button:hover {
+    animation-name: Button;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.circleOne {
+    position: absolute;
+    animation-name: circleEnlarge;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+}
+.circleTwo {
+    position: absolute;
+    animation-name: circleEnlarge;
+    animation-duration: 2.1s;
+    animation-iteration-count: 10000;
+}
+.circleThree {
+    position: absolute;
+    animation-name: circleEnlarge;
+    animation-duration: 2.2s;
+    animation-iteration-count: 10000;
+}
+.ovaly {
+    position: absolute;
+    animation-name: ovalColory;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+    
+}
+.ovalx {
+    position: absolute;
+    animation-name: ovalColorx;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+    
+}
+.mooloo {
+    position: relative;
+    top: 50px;
+    animation-name: moolooZoom;
+    animation-duration: 2s;
+    animation-iteration-count: 10000;
+}
+
+@keyframes box1animate {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+    25% {
+        top: 89%;
+        left: 0%
+    }
+    50% {
+        left: 89.2%;
+        top: 89%;
+    }
+    75% {
+        left: 89.2%;
+        top: 0%;
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+@keyframes box2animate {
+    0% {
+        top: 78.5%;
+        left: 89.2%;
+    }
+    25% {
+        left: 89.2%;
+        top: -10.6%;
+    }
+    50% {
+        left: 0%;
+        top: -10.6%;
+    }
+    75% {
+        left: 0%;
+        top: 78.5%;
+    }
+    100% {
+        top: 78.5%;
+        left: 89.2%;
+    }
+}
+
+.box1 {
+    animation-name: box1animate;
+    animation-duration: 5s;
+    animation-iteration-count: 10000;
+}
+.box2 {
+    animation-name: box2animate;
+    animation-duration: 5s;
+    animation-iteration-count: 10000;
+}
